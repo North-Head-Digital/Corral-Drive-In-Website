@@ -1,0 +1,256 @@
+{
+  "restaurant": {
+    "name": "Corral Drive-In",
+    "location": "Long Beach, WA",
+    "established": "1984",
+    "description": "Authentic drive-in dining experience"
+  },
+  "menu": {
+    "burgers": [
+      {
+        "id": 1,
+        "name": "Tsunami Burger",
+        "price": 12.99,
+        "currency": "USD",
+        "description": "Our legendary half-pound burger with special sauce, crispy bacon, and signature toppings",
+        "highlight": "Signature",
+        "category": "burgers",
+        "ingredients": ["Beef patty", "Special sauce", "Crispy bacon", "Lettuce", "Tomato", "Onion", "Cheese"],
+        "allergens": ["Gluten", "Dairy"],
+        "calories": 850
+      },
+      {
+        "id": 2,
+        "name": "Classic Cheeseburger",
+        "price": 8.99,
+        "currency": "USD",
+        "description": "Traditional beef patty with American cheese, lettuce, tomato, and onion",
+        "category": "burgers",
+        "ingredients": ["Beef patty", "American cheese", "Lettuce", "Tomato", "Onion", "Ketchup", "Mustard"],
+        "allergens": ["Gluten", "Dairy"],
+        "calories": 650
+      },
+      {
+        "id": 3,
+        "name": "Bacon Deluxe",
+        "price": 10.99,
+        "currency": "USD",
+        "description": "Double patty with crispy bacon, cheese, and our special sauce",
+        "category": "burgers",
+        "ingredients": ["Double beef patty", "Crispy bacon", "American cheese", "Special sauce", "Lettuce", "Tomato"],
+        "allergens": ["Gluten", "Dairy"],
+        "calories": 950
+      },
+      {
+        "id": 4,
+        "name": "Veggie Burger",
+        "price": 9.99,
+        "currency": "USD",
+        "description": "Plant-based patty with fresh vegetables and our house-made vegan sauce",
+        "highlight": "Vegetarian",
+        "category": "burgers",
+        "ingredients": ["Plant-based patty", "Vegan cheese", "Lettuce", "Tomato", "Onion", "Vegan sauce"],
+        "allergens": ["Gluten"],
+        "calories": 550,
+        "dietary": ["Vegetarian", "Vegan"]
+      },
+      {
+        "id": 5,
+        "name": "Fish & Chips Burger",
+        "price": 11.99,
+        "currency": "USD",
+        "description": "Fresh cod fillet with tartar sauce and crispy fries on the side",
+        "category": "burgers",
+        "ingredients": ["Cod fillet", "Tartar sauce", "Lettuce", "Tomato", "French fries"],
+        "allergens": ["Gluten", "Fish"],
+        "calories": 750
+      }
+    ],
+    "sides": [
+      {
+        "id": 6,
+        "name": "Crispy Fries",
+        "price": 4.99,
+        "currency": "USD",
+        "description": "Golden, crispy french fries with sea salt",
+        "category": "sides",
+        "ingredients": ["Potatoes", "Sea salt", "Vegetable oil"],
+        "allergens": [],
+        "calories": 320
+      },
+      {
+        "id": 7,
+        "name": "Onion Rings",
+        "price": 5.99,
+        "currency": "USD",
+        "description": "Beer-battered onion rings with ranch dipping sauce",
+        "category": "sides",
+        "ingredients": ["Onions", "Beer batter", "Ranch sauce"],
+        "allergens": ["Gluten", "Dairy"],
+        "calories": 420
+      },
+      {
+        "id": 8,
+        "name": "Sweet Potato Fries",
+        "price": 5.99,
+        "currency": "USD",
+        "description": "Cinnamon-sugar sweet potato fries",
+        "category": "sides",
+        "ingredients": ["Sweet potatoes", "Cinnamon", "Sugar", "Vegetable oil"],
+        "allergens": [],
+        "calories": 380
+      },
+      {
+        "id": 9,
+        "name": "Chili Cheese Fries",
+        "price": 7.99,
+        "currency": "USD",
+        "description": "Loaded fries with homemade chili and melted cheese",
+        "highlight": "Popular",
+        "category": "sides",
+        "ingredients": ["French fries", "Homemade chili", "Melted cheese", "Green onions"],
+        "allergens": ["Gluten", "Dairy"],
+        "calories": 650
+      },
+      {
+        "id": 10,
+        "name": "Mozzarella Sticks",
+        "price": 6.99,
+        "currency": "USD",
+        "description": "Breaded mozzarella sticks with marinara sauce",
+        "category": "sides",
+        "ingredients": ["Mozzarella cheese", "Breadcrumbs", "Marinara sauce"],
+        "allergens": ["Gluten", "Dairy"],
+        "calories": 480
+      }
+    ],
+    "beverages": [
+      {
+        "id": 11,
+        "name": "Classic Milkshake",
+        "price": 5.99,
+        "currency": "USD",
+        "description": "Vanilla, chocolate, or strawberry - made with real ice cream",
+        "category": "beverages",
+        "ingredients": ["Ice cream", "Milk", "Flavoring"],
+        "allergens": ["Dairy"],
+        "calories": 450,
+        "flavors": ["Vanilla", "Chocolate", "Strawberry"]
+      },
+      {
+        "id": 12,
+        "name": "Oreo Milkshake",
+        "price": 6.99,
+        "currency": "USD",
+        "description": "Vanilla milkshake blended with crushed Oreo cookies",
+        "highlight": "Favorite",
+        "category": "beverages",
+        "ingredients": ["Vanilla ice cream", "Milk", "Oreo cookies"],
+        "allergens": ["Dairy", "Gluten"],
+        "calories": 520
+      },
+      {
+        "id": 13,
+        "name": "Fresh Lemonade",
+        "price": 3.99,
+        "currency": "USD",
+        "description": "Freshly squeezed lemonade with mint",
+        "category": "beverages",
+        "ingredients": ["Fresh lemons", "Sugar", "Water", "Mint"],
+        "allergens": [],
+        "calories": 120
+      },
+      {
+        "id": 14,
+        "name": "Iced Tea",
+        "price": 2.99,
+        "currency": "USD",
+        "description": "Sweet or unsweetened iced tea",
+        "category": "beverages",
+        "ingredients": ["Tea", "Water", "Sugar (optional)", "Ice"],
+        "allergens": [],
+        "calories": 80,
+        "options": ["Sweet", "Unsweetened"]
+      },
+      {
+        "id": 15,
+        "name": "Soft Drinks",
+        "price": 2.49,
+        "currency": "USD",
+        "description": "Coke, Pepsi, Sprite, and other favorites",
+        "category": "beverages",
+        "ingredients": ["Carbonated water", "High fructose corn syrup", "Natural flavors"],
+        "allergens": [],
+        "calories": 140,
+        "options": ["Coca-Cola", "Pepsi", "Sprite", "Dr. Pepper", "Root Beer"]
+      }
+    ],
+    "desserts": [
+      {
+        "id": 16,
+        "name": "Apple Pie",
+        "price": 4.99,
+        "currency": "USD",
+        "description": "Homemade apple pie with vanilla ice cream",
+        "category": "desserts",
+        "ingredients": ["Apples", "Pie crust", "Cinnamon", "Sugar", "Vanilla ice cream"],
+        "allergens": ["Gluten", "Dairy"],
+        "calories": 480
+      },
+      {
+        "id": 17,
+        "name": "Chocolate Cake",
+        "price": 5.99,
+        "currency": "USD",
+        "description": "Rich chocolate layer cake with chocolate frosting",
+        "highlight": "Decadent",
+        "category": "desserts",
+        "ingredients": ["Chocolate cake", "Chocolate frosting", "Chocolate chips"],
+        "allergens": ["Gluten", "Dairy", "Eggs"],
+        "calories": 620
+      },
+      {
+        "id": 18,
+        "name": "Ice Cream Sundae",
+        "price": 4.99,
+        "currency": "USD",
+        "description": "Vanilla ice cream with chocolate sauce, whipped cream, and cherry",
+        "category": "desserts",
+        "ingredients": ["Vanilla ice cream", "Chocolate sauce", "Whipped cream", "Cherry"],
+        "allergens": ["Dairy"],
+        "calories": 380
+      }
+    ]
+  },
+  "specials": {
+    "tsunami_challenge": {
+      "name": "Tsunami Challenge",
+      "description": "Finish our legendary Tsunami Burger and get your photo on our wall of fame!",
+      "rules": "Complete the burger and fries in 30 minutes",
+      "prize": "Free meal and wall of fame recognition",
+      "active": true
+    },
+    "daily_specials": [
+      {
+        "day": "Monday",
+        "special": "Buy one burger, get one side free"
+      },
+      {
+        "day": "Tuesday",
+        "special": "50% off all milkshakes"
+      },
+      {
+        "day": "Wednesday",
+        "special": "Family meal deal - 4 burgers + 4 sides + 4 drinks for $39.99"
+      },
+      {
+        "day": "Thursday",
+        "special": "Free dessert with any burger purchase"
+      },
+      {
+        "day": "Friday",
+        "special": "Happy hour - 2 for 1 on all drinks"
+      }
+    ]
+  }
+}

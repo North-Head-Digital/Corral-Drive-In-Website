@@ -1,0 +1,35 @@
+{
+  "name": "corral-drive-in-website",
+  "version": "1.0.0",
+  "description": "Modern responsive website for Corral Drive-In restaurant in Long Beach, WA",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server --port=8000",
+    "build": "echo 'Static site - no build process required'",
+    "deploy": "echo 'Deploy to GitHub Pages or Netlify'"
+  },
+  "keywords": [
+    "restaurant",
+    "website",
+    "drive-in",
+    "long-beach",
+    "washington",
+    "responsive",
+    "bootstrap"
+  ],
+  "author": "Corral Drive-In",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/corraldrivein/corral-drive-in-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/corraldrivein/corral-drive-in-website/issues"
+  },
+  "homepage": "https://corraldrivein.github.io"
+}
