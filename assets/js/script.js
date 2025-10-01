@@ -253,6 +253,7 @@ function initializeNavigation() {
 // Menu functionality
 function initializeMenu() {
     const filterButtons = document.querySelectorAll('.menu-filter .btn');
+    const searchInput = document.getElementById('menu-search');
     
     // Render all menu items
     renderMenuItems();
@@ -269,6 +270,14 @@ function initializeMenu() {
             filterMenuItems(filter);
         });
     });
+    
+    // Search functionality
+    if (searchInput) {
+        searchInput.addEventListener('input', debounce(function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            searchMenuItems(searchTerm);
+        }, 300));
+    }
 }
 
 function renderMenuItems() {
@@ -301,6 +310,21 @@ function filterMenuItems(filter) {
         const category = item.getAttribute('data-category');
         
         if (filter === 'all' || category === filter) {
+            item.classList.remove('hidden');
+        } else {
+            item.classList.add('hidden');
+        }
+    });
+}
+
+function searchMenuItems(searchTerm) {
+    const menuItems = document.querySelectorAll('.menu-item');
+    
+    menuItems.forEach(item => {
+        const name = item.querySelector('.menu-item-name').textContent.toLowerCase();
+        const description = item.querySelector('.menu-item-description').textContent.toLowerCase();
+        
+        if (name.includes(searchTerm) || description.includes(searchTerm)) {
             item.classList.remove('hidden');
         } else {
             item.classList.add('hidden');
