@@ -77,6 +77,8 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
+    z-index: 1;
+    margin-bottom: 0;
 }
 
 .hero-section::before {
@@ -151,6 +153,12 @@ body {
 }
 
 /* About Section */
+#about {
+    position: relative;
+    z-index: 2;
+    background: white;
+}
+
 .about-content h3 {
     color: var(--primary-color);
     margin-bottom: 1.5rem;

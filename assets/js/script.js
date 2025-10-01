@@ -533,15 +533,8 @@ function initializeAnimations() {
 
 // Scroll effects
 function initializeScrollEffects() {
-    window.addEventListener('scroll', function() {
-        const scrolled = window.pageYOffset;
-        const parallaxElements = document.querySelectorAll('.hero-section');
-        
-        parallaxElements.forEach(element => {
-            const speed = 0.5;
-            element.style.transform = `translateY(${scrolled * speed}px)`;
-        });
-    });
+    // Removed problematic parallax effect that was covering content
+    // The hero section should remain static for proper content flow
 }
 
 // Utility functions
